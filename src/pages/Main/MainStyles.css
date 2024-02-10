@@ -1,0 +1,6 @@
+.main{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+}
