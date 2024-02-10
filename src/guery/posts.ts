@@ -12,7 +12,7 @@ export const postsApi = createApi({
     baseUrl: "https://jsonplaceholder.typicode.com",
   }),
   endpoints: (build) => ({
-    getAllPosts: build.query<IPost[], string | number>({
+    getAllPosts: build.query<IPost[], number>({
       query: (limit = 10) => `/posts?${limit && `_limit=${limit}`}`,
     }),
     getAllUsers: build.query<IUser[], any>({
