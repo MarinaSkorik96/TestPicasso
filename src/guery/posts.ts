@@ -13,7 +13,7 @@ export const postsApi = createApi({
   }),
   endpoints: (build) => ({
     getAllPosts: build.query<IPost[], string | number>({
-      query: (limit = "") => `/posts?${limit && `_limit=${limit}`}`,
+      query: (limit = 10) => `/posts?${limit && `_limit=${limit}`}`,
     }),
     getAllUsers: build.query<IUser[], any>({
       query: () => "/users/",
