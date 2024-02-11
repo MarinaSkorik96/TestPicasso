@@ -15,10 +15,13 @@ export const postsApi = createApi({
     getAllPosts: build.query<IPost[], number>({
       query: (limit = 10) => `/posts?${limit && `_limit=${limit}`}`,
     }),
+    getPost: build.query<IPost, number>({
+      query: (id) => `posts/${id}`,
+    }),
     getAllUsers: build.query<IUser[], any>({
       query: () => "/users/",
     }),
   }),
 });
 
-export const { useGetAllPostsQuery, useGetAllUsersQuery } = postsApi;
+export const { useGetAllPostsQuery, useGetAllUsersQuery, useGetPostQuery } = postsApi;

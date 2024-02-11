@@ -4,6 +4,7 @@ import { useGetAllPostsQuery, useGetAllUsersQuery } from "../../guery/posts";
 import { Link } from "react-router-dom";
 import { useAppDispatch } from "../../hook";
 import { getAllUsers, getOpenPost } from "../../store/slices/posts";
+import { IPost } from "../../models/models";
 
 const Post: React.FC = () => {
   const [currentPostStart, setCurrentPostStart] = useState(10);
@@ -24,7 +25,7 @@ const Post: React.FC = () => {
     }
   }, [users]);
 
-  const goToPostPage = (post: any) => {
+  const goToPostPage = (post: IPost) => {
     dispatch(getOpenPost(post));
     console.log(post);
   };
@@ -104,7 +105,7 @@ const Post: React.FC = () => {
                     </>
                   </div>
                   <Link
-                    to="/post"
+                    to={`/post/${post.id}`}
                     className="post_button"
                     onClick={() => {
                       goToPostPage(post);
