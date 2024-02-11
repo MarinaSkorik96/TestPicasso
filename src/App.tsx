@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <Routes>
       <Route path="/" element={<Main />}/>
-      <Route path="/post" element={<FullPost />}/>
+      <Route path="/post/:id" element={<FullPost />}/>
     </Routes>
   );
 };
