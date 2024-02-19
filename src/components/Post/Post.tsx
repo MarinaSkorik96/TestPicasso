@@ -7,7 +7,10 @@ import { getAllUsers, getOpenPost } from "../../store/slices/posts";
 import { IPost } from "../../models/models";
 
 const Post: React.FC = () => {
-  const [currentPostStart, setCurrentPostStart] = useState(10);
+  const [currentPostStart, setCurrentPostStart] = useState(30);
+  useEffect(() => {
+    console.log(currentPostStart);
+  }, [currentPostStart]);
   const [isMyFetching, setIsFetchingDown] = useState(false);
   const [isMyFetchingUp, setIsMyFetchingUp] = useState(false);
   const dispatch = useAppDispatch();
