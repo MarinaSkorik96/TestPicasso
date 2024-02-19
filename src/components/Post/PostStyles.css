@@ -1,4 +1,4 @@
-.no-posts{
+.no-posts {
   font-size: 32px;
   margin-top: 100px;
   margin-bottom: 400px;
@@ -6,12 +6,11 @@
   padding-left: 40px;
 }
 
-.post{
+.post {
   display: flex;
   flex-direction: row;
-  width:49%;  
+  width: 49%;
 }
-
 
 .post_main {
   display: flex;
@@ -21,40 +20,40 @@
   justify-content: space-between;
   background-color: #ffffff;
   border-radius: 10px;
-  border: 1px solid rgb(220, 225,230);
+  border: 1px solid rgb(220, 225, 230);
   padding: 10px;
   width: 100%;
 }
 
-.post_header{
+.post_header {
   display: flex;
   justify-content: space-between;
 }
 
-.post_number{
-  color: #05386B;
+.post_number {
+  color: #05386b;
   margin-left: 20px;
 }
 
-.post_author{
+.post_author {
   text-align: end;
   margin-bottom: 20px;
-  color: #05386B;
+  color: #05386b;
 }
 .post_title {
   text-align: center;
   margin-bottom: 20px;
   font-size: 24px;
-  color: #05386B;
+  color: #05386b;
 }
-.post_text{
+.post_text {
   text-align: justify;
-  text-indent:20px;
+  text-indent: 20px;
   font-size: 20px;
   color: black;
 }
-.post_button{
-  color: #05386B;
+.post_button {
+  color: #05386b;
   background: rgba(235, 240, 250);
   border: none;
   border-radius: 8px;
@@ -71,11 +70,11 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .post_text{
+  .post_text {
     font-size: 16px;
     margin-bottom: 10px;
   }
-  .post_author{
+  .post_author {
     font-size: 16px;
     margin-bottom: 10px;
   }
@@ -89,26 +88,24 @@
     font-size: 18px;
     margin-bottom: 10px;
   }
-  .post_text{
+  .post_text {
     font-size: 16px;
     margin-bottom: 10px;
   }
-  .post_author{
+  .post_author {
     font-size: 16px;
     margin-bottom: 10px;
   }
 
-  .post_button{
+  .post_button {
     padding: 5px 10px 5px 10px;
     width: 170px;
     font-size: 14px;
   }
-
 }
 
-@media (max-width: 670px){
-  .post{
-    width:100%;  
+@media (max-width: 670px) {
+  .post {
+    width: 100%;
   }
-
 }
