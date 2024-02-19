@@ -4,7 +4,7 @@ import "./MainStyles.css";
 
 const Main: React.FC = () => {
   return (
-    <div className="main">
+    <div className="conteiner">
       <Posts />
       <Posts />
       <Posts />
