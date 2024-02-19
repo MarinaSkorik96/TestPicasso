@@ -6,6 +6,8 @@ const Main: React.FC = () => {
   return (
     <div className="conteiner">
       <Posts />
+      <Posts />
+      <Posts />
     </div>
   );
 };

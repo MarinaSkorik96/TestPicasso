@@ -14,13 +14,12 @@ const Post: React.FC = () => {
   const [isMyFetching, setIsFetchingDown] = useState(false);
   const [isMyFetchingUp, setIsMyFetchingUp] = useState(false);
   const dispatch = useAppDispatch();
-
   const {
     data: postsData,
     isLoading: postsLoading,
     isError: postsError,
   } = useGetAllPostsQuery(currentPostStart);
-  const { data: users, isError: usersError } = useGetAllUsersQuery(null);
+  const { data: users, isError: usersError } = useGetAllUsersQuery(" ");
 
   useEffect(() => {
     if (users) {
